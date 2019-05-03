@@ -179,7 +179,7 @@ nav .top-nav-item > h1 {
   margin-top: 1rem;
 }
 nav .top-nav-item > h1:hover {
-  transform: skewX(25deg);
+  transform: translate(2rem, 3rem);
 }
 @media (max-width:550px) {
   nav .top-nav-item > h1 {
@@ -240,7 +240,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  transition: all 0.5s ease;
 }
 @media (max-width:550px) {
   .home .space-images {
@@ -313,10 +312,10 @@ footer {
   border-radius: 0.5rem;
 }
 .home .walk .walk-text .btn:hover {
-  width: 30%;
+  width: 32%;
   background-color: #454A59;
   padding: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: center;
   border-radius: 0.5rem;
   color: #F6F7F8;
@@ -348,4 +347,44 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.contact-page {
+  background-color: #F1F1F1;
+  border-radius: 2rem;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+@media (max-width:550px) {
+  .contact-page {
+    margin-top: 15%;
+  }
+}
+.contact-page .form-data {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7rem 2rem;
+}
+.contact-page .form-data input {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 2rem;
+  height: 4rem;
+}
+.contact-page .form-data textarea {
+  height: 12rem;
+  margin: 1rem 0;
+}
+.contact-page .form-data label {
+  font-size: 2rem;
+}
+.contact-page .form-data .btn-contact-submit {
+  height: 4rem;
+  width: 100%;
+  background-color: #22283A;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #F6F7F8;
+  border-radius: 0.5rem;
 }

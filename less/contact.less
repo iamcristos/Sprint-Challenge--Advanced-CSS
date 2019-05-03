@@ -1,0 +1,32 @@
+// contact page
+.contact-page{
+    background-color: @sea-shell;
+    border-radius:2rem; 
+    margin-top: 10%;
+    margin-bottom: 10%;
+    @media (@phone) {
+        margin-top: 15%;     
+    } 
+    .form-data{
+        .flex-mixins(center, column);
+        padding:7rem 2rem;
+    
+        input{
+            width:100%;
+            margin: 1rem 0;
+            padding: 2rem;
+            height: 4rem;
+        }
+        textarea{
+            height: 12rem;
+            margin: 1rem 0;
+        }
+        label{
+            font-size: 2rem;
+        }
+        .btn-contact-submit{
+            height: 4rem;
+            .button-mixins(100%, @btn-bg-color , 2rem)
+        }
+    }
+}
