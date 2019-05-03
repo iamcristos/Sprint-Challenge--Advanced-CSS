@@ -1,14 +1,14 @@
 // Home Content
 
 .home {
-  @media (@mobileBreakpoint) {
+  @media (@phone) {
     margin: 0;
   };
 
   .intro {
-
+    margin-top: 10rem;
     .header-image>img{
-      @media (@mobileBreakpoint) {
+      @media (@phone) {
         width:100%
     }
     }
@@ -27,7 +27,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    @media (@mobileBreakpoint) {
+    transition: all 0.5s ease;
+    @media (@phone) {
       flex-direction: column;
   } 
     img {
@@ -35,7 +36,7 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      @media (@mobileBreakpoint) {
+      @media (@phone) {
         width: 100%;
         padding:0 2rem;
         margin-left: 1%;
@@ -43,7 +44,7 @@
     }
     }
     .sky,.launch{
-      @media (@mobileBreakpoint) {
+      @media (@phone) {
         display: none;
       }
     }
@@ -68,13 +69,13 @@
     display: flex;
     justify-content: center;
 
-    @media (@mobileBreakpoint) {
+    @media (@phone) {
       flex-direction: column-reverse;
       padding: 1.5rem;
     }
     .walk-text {
       width: 50%;
-      @media (@mobileBreakpoint) {
+      @media (@phone) {
         width:100%
       }
       h3 {
@@ -87,7 +88,11 @@
 
       .btn {
         .button-mixins(30%, @btn-bg-color, 1.5rem);
-        @media (@mobileBreakpoint) {
+        &:hover{
+          .button-mixins(30%, @river-bend, 1.7rem);
+          color: @porcelain;
+        }
+        @media (@phone) {
           .button-mixins(100%,@btn-bg-color, 2rem)
         }
       }
@@ -96,7 +101,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media (@mobileBreakpoint) {
+      @media (@phone) {
         width: 100%;
         padding:0 .5rem;
         margin-left: 0;
