@@ -1,1 +1,26 @@
 // Navigation code here
+
+nav{
+    width:100%;
+    .flex-mixins(space-between, column);
+    align-items: center;
+    text-align: center;
+    height: 9rem;
+    background-color: @wild-sand;
+
+    .top-nav-item>h1{
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+
+    .bottom-nav-item{
+        border: 1px solid purple;
+        margin: 1rem;
+        a{
+            padding: 4rem 2rem;
+            font-size: 2rem;
+            text-decoration: none;
+            color: @ebony-clay;
+        }
+    }
+}
