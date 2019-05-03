@@ -11,15 +11,26 @@ nav{
     .top-nav-item>h1{
         font-size: 4rem;
         margin-top: 1rem;
+        @media (@mobileBreakpoint) {
+            font-size: 2.5rem;
+        }
     }
 
     .bottom-nav-item{
         margin: 1rem;
+        @media (@mobileBreakpoint) {
+           margin: auto;
+           text-align: center;
+        }
         a{
             padding: 4rem 2rem;
             font-size: 2rem;
             text-decoration: none;
             color: @ebony-clay;
+            @media (@mobileBreakpoint) {
+                font-size: 1.5rem;
+                padding: 1rem .7rem;
+            }
         }
     }
 }
